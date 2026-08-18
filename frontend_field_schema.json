@@ -1,0 +1,193 @@
+{
+  "numeric_fields": [
+    {
+      "name": "income",
+      "type": "float",
+      "range": "0.0 - 1.0",
+      "note": "normalized income score"
+    },
+    {
+      "name": "name_email_similarity",
+      "type": "float",
+      "range": "0.0 - 1.0",
+      "note": "system-computed, not user-typed"
+    },
+    {
+      "name": "prev_address_months_count",
+      "type": "int",
+      "note": "-1 or blank if unknown/not applicable"
+    },
+    {
+      "name": "current_address_months_count",
+      "type": "int"
+    },
+    {
+      "name": "customer_age",
+      "type": "int"
+    },
+    {
+      "name": "days_since_request",
+      "type": "float"
+    },
+    {
+      "name": "intended_balcon_amount",
+      "type": "float"
+    },
+    {
+      "name": "zip_count_4w",
+      "type": "int",
+      "note": "backend-aggregated, not user-facing"
+    },
+    {
+      "name": "velocity_6h",
+      "type": "float",
+      "note": "backend-aggregated, not user-facing"
+    },
+    {
+      "name": "velocity_24h",
+      "type": "float",
+      "note": "backend-aggregated, not user-facing"
+    },
+    {
+      "name": "velocity_4w",
+      "type": "float",
+      "note": "backend-aggregated, not user-facing"
+    },
+    {
+      "name": "bank_branch_count_8w",
+      "type": "int",
+      "note": "backend-aggregated, not user-facing"
+    },
+    {
+      "name": "date_of_birth_distinct_emails_4w",
+      "type": "int",
+      "note": "backend-aggregated, not user-facing"
+    },
+    {
+      "name": "credit_risk_score",
+      "type": "float",
+      "note": "-1 if unavailable"
+    },
+    {
+      "name": "bank_months_count",
+      "type": "int",
+      "note": "-1 if unavailable"
+    },
+    {
+      "name": "proposed_credit_limit",
+      "type": "float"
+    },
+    {
+      "name": "session_length_in_minutes",
+      "type": "float",
+      "note": "system-computed"
+    },
+    {
+      "name": "device_distinct_emails_8w",
+      "type": "int",
+      "note": "backend-aggregated, not user-facing"
+    },
+    {
+      "name": "month",
+      "type": "int",
+      "range": "0-7"
+    }
+  ],
+  "categorical_fields": [
+    {
+      "name": "payment_type",
+      "options": [
+        "AA",
+        "AB",
+        "AC",
+        "AD",
+        "AE"
+      ]
+    },
+    {
+      "name": "employment_status",
+      "options": [
+        "CA",
+        "CB",
+        "CC",
+        "CD",
+        "CE",
+        "CF",
+        "CG"
+      ]
+    },
+    {
+      "name": "housing_status",
+      "options": [
+        "BA",
+        "BB",
+        "BC",
+        "BD",
+        "BE",
+        "BF",
+        "BG"
+      ]
+    },
+    {
+      "name": "source",
+      "options": [
+        "INTERNET",
+        "TELEAPP"
+      ]
+    },
+    {
+      "name": "device_os",
+      "options": [
+        "linux",
+        "windows",
+        "macintosh",
+        "x11",
+        "other"
+      ]
+    }
+  ],
+  "binary_fields": [
+    {
+      "name": "email_is_free",
+      "options": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "phone_home_valid",
+      "options": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "phone_mobile_valid",
+      "options": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "has_other_cards",
+      "options": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "foreign_request",
+      "options": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "keep_alive_session",
+      "options": [
+        0,
+        1
+      ]
+    }
+  ]
+}
