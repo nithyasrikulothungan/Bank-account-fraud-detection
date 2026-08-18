@@ -1,0 +1,47 @@
+{
+  "continuous_cols": [
+    "income",
+    "name_email_similarity",
+    "prev_address_months_count",
+    "current_address_months_count",
+    "customer_age",
+    "days_since_request",
+    "intended_balcon_amount",
+    "zip_count_4w",
+    "velocity_6h",
+    "velocity_24h",
+    "velocity_4w",
+    "bank_branch_count_8w",
+    "date_of_birth_distinct_emails_4w",
+    "credit_risk_score",
+    "bank_months_count",
+    "proposed_credit_limit",
+    "session_length_in_minutes",
+    "device_distinct_emails_8w"
+  ],
+  "categorical_cols_for_onehot": [
+    "payment_type",
+    "employment_status",
+    "housing_status",
+    "source",
+    "device_os"
+  ],
+  "missing_sentinel_cols": [
+    "prev_address_months_count",
+    "current_address_months_count",
+    "credit_risk_score",
+    "bank_months_count",
+    "session_length_in_minutes",
+    "device_distinct_emails_8w"
+  ],
+  "threshold_high_precision": 0.913,
+  "threshold_high_recall": 0.619,
+  "missing_value_medians": {
+    "prev_address_months_count": 105.317,
+    "current_address_months_count": 104.074,
+    "credit_risk_score": 130.665,
+    "bank_months_count": 19.834,
+    "session_length_in_minutes": 8.929,
+    "device_distinct_emails_8w": 1.018
+  }
+}
